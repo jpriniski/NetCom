@@ -5,7 +5,7 @@ Repository for experimental software, statistical analysis, computational modeli
 - Priniski, J. H., Linford, B., Krishna, S., Morstatter, F., Brantingham, J., & Lu, H. (2024). Online network topology shapes personal narratives and hashtag generation. Proceedings of the Cognitive Science Society. [Article PDF](https://escholarship.org/uc/item/6pv4z0j5)
 
 ### Network Experiment Software 
-This directory contains the Python (OTree) and JavaScript software for running a network experiment on group communication. There are two folders, face_experiment and hashtag_experiment, which ask participants to communicate and align responses using different digital media. The README.md in this directory provides instructions for setting up a server to host the experiment, which you can customize and extend with minimal Python and JavaScript expertise. Below is a high-level overview of the experimental procedure
+This directory contains the Python (OTree) and JavaScript software for running a network experiment on group communication. There are two folders, face_experiment and hashtag_experiment, which ask participants to communicate and align responses using different digital media. The README.md in this directory provides instructions for setting up a server to host the experiment, which you can customize and extend with minimal Python and JavaScript expertise. Below is a high-level overview of the experimental procedure. The pre and postinteraction phases were administered using a Qualtrics survey, which linked participants to the network server (OTree python code). The code for each of these experimental phases can be found in this directory. 
 ![Networks Overview Figure](https://github.com/user-attachments/assets/b2541a97-ad18-48e0-be8a-57eed74b318c)
 
 
