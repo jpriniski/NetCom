@@ -1,0 +1,2 @@
+Data carpentry scripts available as Jupyter Notebook in the Raw Data folder. The notebook transform the OTree dataframes (one per experimental run) into long format and concatenates them across all runs for statistical analysis and hypothesis testing.
+Reproduction of statistical analyses and visualizations reported in manuscript can be carried out on the interaction dataframe saved as a single csv. 
