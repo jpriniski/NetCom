@@ -1,2 +1,9 @@
 # Network Communication Experiments
-A toolkit for analyzing group communication experiments, integrating Python and R functions for data processing, visualization, and statistical modeling, designed to be accessible for researchers in computational social science and cognitive science.
+
+Repository for experimental software, statistical analysis, and behavioral data used in ongoing network experiments on group communication. 
+
+
+
+### Publications 
+
+Priniski, J. H., Linford, B., Krishna, S., Morstatter, F., Brantingham, J., & Lu, H. (2024). Online network topology shapes personal narratives and hashtag generation. Proceedings of the Cognitive Science Society. [Article PDF](https://escholarship.org/uc/item/6pv4z0j5)
