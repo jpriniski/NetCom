@@ -3,6 +3,15 @@
 Repository for experimental software, statistical analysis, and behavioral data used in ongoing network experiments on group communication. 
 
 
+### Network Experiment Software 
+
+This directory contains the Python (OTree) and JavaScript software for running a network experiment on group communication. There are two folders, face_experiment and hashtag_experiment, which ask participants to communicate and align responses using different digital media. The README.md in this directory provides instructions for setting up a server to host the experiment, which you can customize and extend with minimal Python and JavaScript expertise.
+
+
+
+
+
+
 
 ### Publications 
 
