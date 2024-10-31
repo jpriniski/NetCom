@@ -1,0 +1,1 @@
+The statistical models and visualization software used for the figures reported in this manuscript. Figures and statistical models for the interaction dynamics and narrative shift results are reproducible from the interaction dataframes in the Experimental Data directory.
