@@ -4,6 +4,13 @@ Repository for experimental software, statistical analysis, computational modeli
 - Priniski, J. H., Linford, B., Krishna, S., Hirschman, A., Rodriguez, N., Morstatter, F., Brantingham, J., & Lu, H. (2024). Cognitive complexity and neighborhood structure shape narrative interaction in online social networks. (Under Review). Manuscript available upon request. 
 - Priniski, J. H., Linford, B., Krishna, S., Morstatter, F., Brantingham, J., & Lu, H. (2024). Online network topology shapes personal narratives and hashtag generation. Proceedings of the Cognitive Science Society. [Article PDF](https://escholarship.org/uc/item/6pv4z0j5)
 
+### Statistical Analyses
+This directory contains Bayesian GLMs and ggplot figures that visualize and model group-level behaviors and narrative shifts resulting from interactions under different network conditions. These GLMs include predictors that test hypotheses on how the cognitive complexity of interacting over various digital media mediates the impact of a group's network structure on its dynamics.
+
+<p align="center">
+  <img width="532" alt="group_dynamics" src="https://github.com/user-attachments/assets/dc48b00f-14b8-4263-9569-632eab690d52">
+</p>
+
 ### Experimental Data 
 Raw and processed data from all experimental runs is in this directory. Data carpentry scripts are available as Jupyter Notebooks, which transform the OTree dataframes (one per experimental run) into long format and concatenate them across all runs for statistical analysis and hypothesis testing.
 
