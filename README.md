@@ -1,4 +1,4 @@
-# Experiments, Models, and Software on Networked Communication 
+# Networked Communication Experiments, Data, and Analyses
 <p align="center">
   <img width="650" alt="network_conditions" src="https://github.com/user-attachments/assets/d783ba2f-2ffa-4ff7-a30d-9eed0967045a">
 </p>
