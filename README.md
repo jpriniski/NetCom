@@ -1,11 +1,14 @@
 # Networked Communication Experiments, Data, and Analyses
+
+If you are a reviewer on the manuscript _Network structure shapes consensus dynamics through individual decisions_, please see Network Structure Experiments directory for code and data. 
+
 <p align="center">
   <img width="650" alt="network_conditions" src="https://github.com/user-attachments/assets/d783ba2f-2ffa-4ff7-a30d-9eed0967045a">
 </p>
 While narratives have shaped cognition and cultures for centuries, digital media and online social networks have introduced new narrative phenomena. With increased narrative agency, networked groups of individuals can directly contribute to and steer narratives that center our collective discussions of politics, science, and morality. Online network experiments provide a unique window to empirically study how networked group communication shapes narrative interaction. However, previous research has relied on relatively simplistic interactions to assess how a group's network structure impacts collective outcomes, with limited generalizability to the interaction complexity of real-world online environments (e.g., coordinating hashtags to facilitate narrative spread). This is a repository for experimetnal and data analysis software for running online netowrk experiments, and data and scripts from experiments our team has previously ran. Please conslut these articles for more information on our findings:  
 
+Conference articles:
 - Priniski, J. H., Linford, B., Cao, D., Morstatter, F., Brantingham, J., & Lu, H. (2025). Effect-prompting shifts the narrative frame of networked interactions. Proceedings of the Cognitive Science Society. [Article PDF](https://jpriniski.github.io/PDFs/CogSci_2025.pdf)
-- Priniski, J. H., Linford, B., Krishna, S., Hirschman, A., Rodriguez, N., Morstatter, F., Brantingham, J., & Lu, H. (2024). Cognitive complexity and neighborhood structure shape narrative interaction in online social networks. (In prep). 
 - Priniski, J. H., Linford, B., Krishna, S., Morstatter, F., Brantingham, J., & Lu, H. (2024). Online network topology shapes personal narratives and hashtag generation. Proceedings of the Cognitive Science Society. [Article PDF](https://escholarship.org/uc/item/6pv4z0j5)
 
 ## What is in this repository?
