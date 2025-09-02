@@ -71,6 +71,6 @@ oTree Projects.
 """
 
 
-SECRET_KEY = '6954724597104'
+SECRET_KEY = ''#email priniski @ ucla.edu for key
 
 INSTALLED_APPS = ['otree']
