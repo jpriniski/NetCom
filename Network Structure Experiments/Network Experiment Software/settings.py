@@ -8,28 +8,10 @@ SESSION_CONFIGS = [
         app_sequence=['network_experiment'],
         num_demo_participants=6,
     ),
-        dict(
-        name='network_experiment_reward',
-        display_name="Network Experiment Reward",
-        app_sequence=['network_experiment_reward'],
-        num_demo_participants=6,
-    ),
-    dict(
-        name='causality',
-        display_name="Network Experiment with Causal Relations",
-        app_sequence=['causality'],
-        num_demo_participants=6,
-    ),
     dict(
         name='hashtag_experiment',
         display_name="Hashtag Experiment",
         app_sequence=['hashtag_experiment'],
-        num_demo_participants=6,
-    ),
-    dict(
-        name='facename2',
-        display_name="v2 of face",
-        app_sequence=['network_experiment2'],
         num_demo_participants=6,
     ),
 ]
