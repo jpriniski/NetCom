@@ -13,7 +13,7 @@ library(dplyr)
 library(tidyverse)
 library(bayesplot)
 
-setwd("/Users/hunter/Desktop/Nature Human Behavior/Causal Language/")
+setwd("get/path")
 
 all_tweets <- read.csv('all_tweets.csv')
 claims <- read.csv('claims.csv')
