@@ -21,7 +21,7 @@ claims <- read.csv('claims.csv')
 claims_full <- inner_join(claims, all_tweets, by = c("text" = "Response"), 
                           relationship = "many-to-many")
 
-#write.csv(claims_full, file = "/Users/hunter/Desktop/Nature Human Behavior/Causal Language/claims_full.csv", row.names = FALSE)
+#write.csv(claims_full, file = "claims_full.csv", row.names = FALSE)
 
 counts_df <- claims_full %>%
   group_by(Structure, Content, Size, Phase, random.ID) %>%
