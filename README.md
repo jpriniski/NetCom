@@ -15,6 +15,8 @@ Conference articles:
 
 Repository for experimental software, statistical analysis, computational modeling, and behavioral data used in ongoing network experiments on group communication. This README.md provides a roadmap for the software and data stored in this repository. Directories will have additional README.md files to help with using the software. 
 
+Go here to access data carpentry script to visualizes all interaction data: Network Structure Experiments/Experimental Data/Experimental Data (Raw)/Experimental_Data_Carpentry_OSF.ipynb
+
 ### Statistical Analyses
 This directory contains Bayesian GLMs and ggplot figures that visualize and model group-level behaviors and narrative shifts resulting from interactions under different network conditions. These GLMs include predictors that test hypotheses on how the cognitive complexity of interacting over various digital media mediates the impact of a group's network structure on its dynamics.
 
