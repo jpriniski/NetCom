@@ -8,7 +8,7 @@ Please refer to the following data files, Jupyter Notebooks, and R scripts liste
 
 ### Data
 - `all_interaction_data.csv`: long-formatted dataframe of all interactions. (Analysis scripts based on this dataframe)
-- `all_tweets.csv`: long-formatted dataframe of all pre-/post-interaction personal narratives. (Analysis scripts based on this dataframe)
+- `all_tweets.csv`: long-formatted dataframe of all pre- and post-interaction personal narratives. (Analysis scripts based on this dataframe.)
 - Network Interactions: long-formatted .csv files for individual network runs. File names: f20h1.csv means Face N = 20 Homogeneous Run 1. 
 - Pre- and Post Data: wide-formatted .csv files of personal narratives and pre-/post- interaction hashtags. Pre- and Post-interaction hashtags were not analyzed in this experiment. File names: f20h1.csv means Face N = 20 Homogeneous Run 1. 
 
@@ -19,7 +19,7 @@ Please refer to the following data files, Jupyter Notebooks, and R scripts liste
   - ⭐️ `Focal Narrative Alignment.ipynb`: Jupyter Notebook for running the narrative alignment analysis in the paper (Figure 3A)
 - Personal Narratives
   - `all_tweets.csv`: same file as above, just saved locally for running script. 
-  - `claims.csv`: causal claims extracted by the Causal Claims Transformer. The Causal Claims Transformer can be accessed at the following Hugging Face link.
+  - `claims.csv`: causal claims extracted by the Causal Claims Transformer. The Causal Claims Transformer can be accessed at the following Hugging Face [repo](https://huggingface.co/jpriniski/Causal-Claims-Transformer/blob/main/README.md)
   - ⭐️ `NarrativeShifts.R`: R Script for analyzing the personal narrative changes.
 
 
