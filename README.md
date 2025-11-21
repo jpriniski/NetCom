@@ -1,36 +1,35 @@
-# Networked Communication Experiments, Data, and Analyses
+# Open Code and Data 
 
-If you are a reviewer on the manuscript _Network structure shapes consensus dynamics through individual decisions_, please see Network Structure Experiments directory for code and data. 
+This repository contains experimental data and statistical analysis scripts for replicating the results in the paper: 
 
-<p align="center">
-  <img width="650" alt="network_conditions" src="https://github.com/user-attachments/assets/d783ba2f-2ffa-4ff7-a30d-9eed0967045a">
-</p>
-While narratives have shaped cognition and cultures for centuries, digital media and online social networks have introduced new narrative phenomena. With increased narrative agency, networked groups of individuals can directly contribute to and steer narratives that center our collective discussions of politics, science, and morality. Online network experiments provide a unique window to empirically study how networked group communication shapes narrative interaction. However, previous research has relied on relatively simplistic interactions to assess how a group's network structure impacts collective outcomes, with limited generalizability to the interaction complexity of real-world online environments (e.g., coordinating hashtags to facilitate narrative spread). This is a repository for experimetnal and data analysis software for running online netowrk experiments, and data and scripts from experiments our team has previously ran. Please conslut these articles for more information on our findings:  
+Priniski, et al. (2025). Network structure shapes consensus dynamics through individual decisions. _PNAS_.
 
-Conference articles:
-- Priniski, J. H., Linford, B., Cao, D., Morstatter, F., Brantingham, J., & Lu, H. (2025). Effect-prompting shifts the narrative frame of networked interactions. Proceedings of the Cognitive Science Society. [Article PDF](https://jpriniski.github.io/PDFs/CogSci_2025.pdf)
-- Priniski, J. H., Linford, B., Krishna, S., Morstatter, F., Brantingham, J., & Lu, H. (2024). Online network topology shapes personal narratives and hashtag generation. Proceedings of the Cognitive Science Society. [Article PDF](https://escholarship.org/uc/item/6pv4z0j5)
+Please refer to the following data files, Jupyter Notebooks, and R scripts listed. Subdirectories are formatted as headers, with important files in that directory listed as bullet points. The main replication files are marked with a ⭐️, and are `InteractionDynamics.R`, `Focal Narrative Alignment.ipynb`, `NarrativeShifts.R` (for modeling experimental data), and `SimulationCode.ipynb` (running the agent-based models). For more detailed instructions on running these scripts, consult comments in the notebooks and R scripts. 
 
-## What is in this repository?
+### Data
+- `all_interation_data.csv`: long-formatted dataframe of all interactions. (Analysis scripts based on this dataframe)
+- `all_tweets.csv`: long-formatted dataframe of all pre-/post-interaction personal narratives. (Analysis scripts based on this dataframe)
+- Network Interactions: long-formatted .csv files for individual network runs. File names: f20h1.csv means Face N = 20 Homogenous Run 1. 
+- Pre- and Post Data: wide-formatted .csv files of personal narratives and pre-/post- interaction hashtags. Pre- and Post-interaction hashtags were not analyzed in this experiment. File names: f20h1.csv means Face N = 20 Homogenous Run 1. 
 
-Repository for experimental software, statistical analysis, computational modeling, and behavioral data used in ongoing network experiments on group communication. This README.md provides a roadmap for the software and data stored in this repository. Directories will have additional README.md files to help with using the software. 
+### Data Analysis
+- Network Interaction
+  - ⭐️ `InteractionDynamics.R`: R script for analyzing interaction data (Figure 2)
+  - `models.zip`: Statistical models fit in R for interaction analysis. Load these models in when replicating InteractionDynamics.R to reduce run-time for fitting Bayesian models.
+  - ⭐️ `Focal Narrative Alignment.ipynb`: Jupyter Notebook for running the narrative alignment analysis in the paper (Figure 3A)
+- Personal Narratives
+  - `all_tweets.csv`: same file as above, just saved locally for running script. 
+  - `claims.csv`: causal claims extracted by the Causal Claims Transformer. The Causal Claims Transformer can be accessed at the following Hugging Face link.
+  - ⭐️ `NarrativeShifts.R`: R Script for analyzing the personal narrative changes.
 
-Go here to access data carpentry script to visualizes all interaction data: Network Structure Experiments/Experimental Data/Experimental Data (Raw)/Experimental_Data_Carpentry_OSF.ipynb
 
-### Statistical Analyses
-This directory contains Bayesian GLMs and ggplot figures that visualize and model group-level behaviors and narrative shifts resulting from interactions under different network conditions. These GLMs include predictors that test hypotheses on how the cognitive complexity of interacting over various digital media mediates the impact of a group's network structure on its dynamics.
+### Experimental Software
+- Pre- and Post Qualtrics Wrappers. This directory contains the qualtrics wrappers around the OTree network interaction experiments that are used for Phase 1 and Phase 3 of the experiment.
+- Network Interaction OTree Software. 
+  - face_experiment: OTree Code for the Name Game condition
+  - hashtag_experiment: OTree code for the Hashtag Game condition
+  - `generate_trials.py`: Python code for generating interaction pairs. The trials used in the experiment are in custom_networks directors of the face and hashtag experiment.
 
-<p align="center">
-  <img width="532" alt="group_dynamics" src="https://github.com/user-attachments/assets/dc48b00f-14b8-4263-9569-632eab690d52">
-</p>
-
-### Experimental Data 
-Raw and processed data from all experimental runs is in this directory. Data carpentry scripts are available as Jupyter Notebooks, which transform the OTree dataframes (one per experimental run) into long format and concatenate them across all runs for statistical analysis and hypothesis testing.
-
-<img width="1100" alt="colormaps" src="https://github.com/user-attachments/assets/f8bbadd3-a435-494d-a1c7-af3a8b4ffa1e">
-
-### Network Experiment Software 
-This directory contains the Python (OTree) and JavaScript software for running a network experiment on group communication. There are two folders, face_experiment and hashtag_experiment, which ask participants to communicate and align responses using different digital media. The README.md in this directory provides instructions for setting up a server to host the experiment, which you can customize and extend with minimal Python and JavaScript expertise. Below is a high-level overview of the experimental procedure. The pre and postinteraction phases were administered using a Qualtrics survey, which linked participants to the network server (OTree python code). The code for each of these experimental phases can be found in this directory. 
-![Networks Overview Figure](https://github.com/user-attachments/assets/b2541a97-ad18-48e0-be8a-57eed74b318c)
-
+### Simulations
+- ⭐️ `SimulationCode.ipynb`: Run this Jupyter Notebook to simulate the Context Aware Agents. All other code and files are helper functions. 
 
