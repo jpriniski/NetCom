@@ -28,7 +28,7 @@ Please refer to the following data files, Jupyter Notebooks, and R scripts liste
 - Network Interaction OTree Software. 
   - face_experiment: OTree Code for the Name Game condition
   - hashtag_experiment: OTree code for the Hashtag Game condition
-  - `generate_trials.py`: Python code for generating interaction pairs. The trials used in the experiment are in custom_networks directors of the face and hashtag experiment.
+  - `generate_trials.py`: Python code for generating interaction pairs. The trials used in the experiment are in custom_networks directories of the face and hashtag experiment.
 
 ### Simulations
 - ⭐️ `SimulationCode.ipynb`: Run this Jupyter Notebook to simulate the Context Aware Agents. All other code and files are helper functions. 
