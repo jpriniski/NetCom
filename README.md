@@ -7,10 +7,10 @@ Priniski, et al. (2025). Network structure shapes consensus dynamics through ind
 Please refer to the following data files, Jupyter Notebooks, and R scripts listed. Subdirectories are formatted as headers, with important files in that directory listed as bullet points. The main replication files are marked with a ⭐️, and are `InteractionDynamics.R`, `Focal Narrative Alignment.ipynb`, `NarrativeShifts.R` (for modeling experimental data), and `SimulationCode.ipynb` (running the agent-based models). For more detailed instructions on running these scripts, consult comments in the notebooks and R scripts. 
 
 ### Data
-- `all_interation_data.csv`: long-formatted dataframe of all interactions. (Analysis scripts based on this dataframe)
+- `all_interaction_data.csv`: long-formatted dataframe of all interactions. (Analysis scripts based on this dataframe)
 - `all_tweets.csv`: long-formatted dataframe of all pre-/post-interaction personal narratives. (Analysis scripts based on this dataframe)
-- Network Interactions: long-formatted .csv files for individual network runs. File names: f20h1.csv means Face N = 20 Homogenous Run 1. 
-- Pre- and Post Data: wide-formatted .csv files of personal narratives and pre-/post- interaction hashtags. Pre- and Post-interaction hashtags were not analyzed in this experiment. File names: f20h1.csv means Face N = 20 Homogenous Run 1. 
+- Network Interactions: long-formatted .csv files for individual network runs. File names: f20h1.csv means Face N = 20 Homogeneous Run 1. 
+- Pre- and Post Data: wide-formatted .csv files of personal narratives and pre-/post- interaction hashtags. Pre- and Post-interaction hashtags were not analyzed in this experiment. File names: f20h1.csv means Face N = 20 Homogeneous Run 1. 
 
 ### Data Analysis
 - Network Interaction
