@@ -1,0 +1,95 @@
+{{ block title }}
+    Network Experiment (Round {{ curr_round }} out of {{ total_rounds }})
+{{ endblock }}
+{{ block content }}
+
+<div>
+    <b>Please click the next button to save your responses before the timeout!</b><br><br>
+    <img src="{{ static 'face.jpg' }}" width="400px"/>
+    {{ formfield 'name' }}
+    <input type="hidden" name="imp_idx" id="imp_idx" />
+    <div id="radiobutton" style="padding: 15px;"> </div>
+    <input type="hidden" name="competence" id="competence" />
+    <input type="hidden" name="dominance" id="dominance" />
+    <input type="hidden" name="maturity" id="maturity" />
+    <input type="hidden" name="likeability" id="likeability" />
+    <input type="hidden" name="trustworthiness" id="trustworthiness" />
+</div>
+    {{ next_button }}
+    <script>
+        const impressions = ["This person is competent: ", "This person has a dominant personality: ", "This person has a mature personality: ", "This person has a like-able personality: ", "This person is trustworthy: "];
+        const choices = ['competence', 'dominance', 'maturity', 'likeability', 'trustworthiness'];
+        let randomNumber = parseInt(js_vars.c_ind)
+        console.log(randomNumber)
+        document.getElementById('imp_idx').value = randomNumber
+        const cur_choice = choices[randomNumber];
+        const data = {
+            'Strongly disagree (1)' : false, 
+            'Disagree (2)' : false,
+            'Moderately disagree (3)' : false,
+            'Neither agree nor disagree (4)' : false,
+            'Moderately agree (5)' : false,
+            'Agree (6)' : false,
+            'Strongly agree (7)': false
+        };
+        let i = 0;
+
+        var imps = document.createElement('label')
+        var desc = document.createTextNode(impressions[randomNumber]);
+        imps.appendChild(desc);
+        var newline = document.createElement('br');
+        var container = document.getElementById('radiobutton');
+        container.appendChild(imps);
+        container.appendChild(newline);
+
+        for(let key in data){
+            var radiobox = document.createElement('input');
+            radiobox.name = 'myradio'
+            radiobox.type = 'radio';
+            radiobox.value = i+1;
+            var label = document.createElement('label');
+            var description = document.createTextNode(key);
+
+            radiobox.addEventListener('change', () => {
+                Object.keys(data).forEach(key => {
+                    data[key] = false;
+                })
+                data[key] = true;
+            });
+            var newline = document.createElement('br');
+            label.appendChild(radiobox);
+            label.appendChild(description);
+            container.appendChild(label);
+            container.appendChild(newline);
+            i++;
+        }
+        let submit_button = document.getElementsByClassName('otree-btn-next'); 
+        submit_button[0].addEventListener("click", function() {
+            let chosen = 0;
+            let i = 1;
+            for(let key in data){
+                if(data[key] == true){
+                    chosen = i;
+                    break;
+                }
+                i++;
+            }
+            if(cur_choice == 'competence'){
+                console.log(document.getElementById('competence').value);
+                document.getElementById('competence').value = chosen;
+            }
+                
+            else if(cur_choice == 'dominance')
+                document.getElementById('dominance').value = chosen;
+            else if(cur_choice == 'maturity')
+                document.getElementById('maturity').value = chosen;
+            else if(cur_choice == 'likeability')
+                document.getElementById('likeability').value = chosen;
+            else if(cur_choice == 'trustworthiness')
+                document.getElementById('trustworthiness').value = chosen;    
+        });
+
+    </script>
+{{ endblock }}
+
+
